@@ -5,11 +5,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class CarNameView {
-    private CarGroup carGroup;
-
-    public CarNameView(CarGroup carGroup) {
-        this.carGroup = carGroup;
-    }
+    CarGroup carGroup;
 
     public void go() throws IOException {
 
@@ -29,11 +25,8 @@ public class CarNameView {
         carGroup = new CarGroup(carNames);
         bw.close();
         br.close();
-        System.out.println(Arrays.toString(getCarGroup().getCarList().toArray()));
     }
-
     public CarGroup getCarGroup(){
         return this.carGroup;
     }
-
 }

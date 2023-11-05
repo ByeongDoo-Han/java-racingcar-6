@@ -12,7 +12,7 @@ public class RaceTryView {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         StringBuilder sb = new StringBuilder();
-        sb.append("시도할 횟수는 몇 회인가요?");
+        sb.append("시도할 횟수는 몇 회인가요?\n");
         bw.write(sb.toString());
         bw.flush();
 
@@ -26,6 +26,7 @@ public class RaceTryView {
         this.tryNum = num;
         bw.close();
         br.close();
+        System.out.println(tryNum);
     }
 
     public int getTryNum(){

@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Application {
     public static void main(String[] args) throws IOException{
-        CarNameView carNameView = new CarNameView(carGroup);
+        CarNameView carNameView = new CarNameView();
         RaceTryView raceTryView = new RaceTryView();
         RaceResultView raceResultView = new RaceResultView();
         WhoIsWinnerView whoIsWinnerView = new WhoIsWinnerView();
