@@ -6,6 +6,9 @@ import java.util.StringTokenizer;
 
 public class CarNameView {
     CarGroup carGroup;
+    public CarNameView(){
+
+    }
 
     public void go() throws IOException {
 

@@ -7,6 +7,9 @@ import java.util.List;
 public class WhoIsWinnerView {
     private CarGroup carGroup;
 
+    public WhoIsWinnerView(){
+
+    }
     public void go() throws IOException {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringBuilder sb = new StringBuilder();
