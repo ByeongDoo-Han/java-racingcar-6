@@ -24,5 +24,7 @@ public class RaceResultView {
         }
         bw.write("\n");
         bw.flush();
+        bw.close();
+        br.close();
     }
 }

@@ -15,8 +15,10 @@ public class WhoIsWinnerView {
         s = removeParentheses(s);
         sb.append(s);
         sb.append("가 최종 우승했습니다.");
-        bw.write(String.valueOf(sb));
+        bw.write(sb.toString());
         bw. flush();
+        bw.close();
+
     }
 
     private String removeParentheses(String s){

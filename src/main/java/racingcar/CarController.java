@@ -1,6 +1,7 @@
 package racingcar;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 public class CarController {
     private final CarNameView carNameView;
@@ -20,8 +21,9 @@ public class CarController {
 
     public void go() throws IOException {
         carNameView.go();
-        raceTryView.go();
-        raceResultView.go();
-        whoIsWinnerView.go();
+
+//        raceTryView.go();
+//        raceResultView.go();
+//        whoIsWinnerView.go();
     }
 }

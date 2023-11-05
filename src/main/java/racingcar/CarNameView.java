@@ -1,10 +1,16 @@
 package racingcar;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class CarNameView {
-    CarGroup carGroup;
+    private CarGroup carGroup;
+
+    public CarNameView(CarGroup carGroup) {
+        this.carGroup = carGroup;
+    }
+
     public void go() throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -19,7 +25,11 @@ public class CarNameView {
         String names = st.nextToken();
         String[] carNames= names.split(",");
 
-        this.carGroup = new CarGroup(carNames);
+
+        carGroup = new CarGroup(carNames);
+        bw.close();
+        br.close();
+        System.out.println(Arrays.toString(getCarGroup().getCarList().toArray()));
     }
 
     public CarGroup getCarGroup(){

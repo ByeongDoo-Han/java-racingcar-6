@@ -1,10 +1,12 @@
 package racingcar;
 
 import java.io.StringBufferInputStream;
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class CarGroup {
-    private List<Car> carList;
+    List<Car> carList = new LinkedList<>();
     private int maxScore =0;
 
     CarGroup(String[] carList){
@@ -15,7 +17,7 @@ public class CarGroup {
     }
 
     public int countCar(){
-        return carList.size();
+        return this.getCarList().size();
     }
 
     public int getMaxScore(){
